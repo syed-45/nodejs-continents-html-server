@@ -13,18 +13,28 @@ app.get("/africa", (req, res) => {
   res.sendFile(pathToFile);
 });
 
+app.get("/antarctica", (req, res) => {
+  const pathToFile = filePath("/pages/antarctica.html");
+  res.sendFile(pathToFile);
+});
+
 app.get("/asia", (req, res) => {
   const pathToFile = filePath("/pages/asia.html");
   res.sendFile(pathToFile);
 });
 
 app.get("/oceania", (req, res) => {
-  const pathToFile = filePath("/pages/south-america.html");
+  const pathToFile = filePath("/pages/oceania.html");
   res.sendFile(pathToFile);
 });
 
 app.get("/south-america", (req, res) => {
-  const pathToFile = filePath("/pages/index.html");
+  const pathToFile = filePath("/pages/south-america.html");
+  res.sendFile(pathToFile);
+});
+
+app.get("/europe", (req, res) => {
+  const pathToFile = filePath("/pages/europe.html");
   res.sendFile(pathToFile);
 });
 
